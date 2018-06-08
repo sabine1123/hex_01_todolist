@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+body {
+  background-color: #e1e1e1;
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  width: 100%;
+  background-color: #4A90E2; }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    header ul li {
+      font-size: 24px;
+      color: #00408B;
+      width: 220px;
+      text-align: center;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      position: relative;
+      cursor: pointer; }
+      header ul li.active {
+        color: #fff; }
+        header ul li.active::after {
+          content: '';
+          width: 160px;
+          height: 5px;
+          background-color: #00408B;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 30px; }
+
+.container {
+  width: 620px;
+  margin: 0 auto; }
+  .container .add {
+    font-size: 24px;
+    color: #c8c8c8;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #c8c8c8;
+    padding: 18px 0 18px 32px;
+    margin-top: 24px; }
+  .container .list-wrap {
+    padding-top: 16px; }
+  .container .list {
+    background-color: #f2f2f2;
+    margin-top: 8px; }
+    .container .list .header {
+      border-radius: 5px;
+      padding: 24px 32px 0; }
+      .container .list .header .line {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .container .list .header .line .title {
+          width: 436px;
+          font-size: 24px;
+          margin: 0 0 15px 40px; }
+        .container .list .header .line .remark, .container .list .header .line .edit {
+          font-size: 24px;
+          cursor: pointer; }
+        .container .list .header .line .edit {
+          margin-left: 32px; }
+    .container .list .icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #757575;
+      margin-left: 72px;
+      padding-bottom: 15px; }
+      .container .list .icons div {
+        margin-right: 16px; }
+    .container .list .edit-area {
+      border-top: 2px solid #c8c8c8;
+      margin-top: 9px;
+      margin-bottom: 16px; }
+      .container .list .edit-area .form-g {
+        padding-left: 72px;
+        margin-top: 24px; }
+        .container .list .edit-area .form-g .title {
+          margin-bottom: 7px; }
+          .container .list .edit-area .form-g .title span {
+            font-size: 20px;
+            margin-left: 10px; }
+        .container .list .edit-area .form-g textarea {
+          width: 445px;
+          height: 120px; }
+        .container .list .edit-area .form-g input:first-of-type, .container .list .edit-area .form-g textarea {
+          margin-left: 23px; }
+        .container .list .edit-area .form-g input, .container .list .edit-area .form-g textarea {
+          border: none;
+          outline: none; }
+        .container .list .edit-area .form-g input[type="text"] {
+          width: 162px;
+          height: 35px;
+          padding-left: 10px; }
+        .container .list .edit-area .form-g input[type="file"] {
+          width: 0px;
+          height: 0px;
+          opacity: 0; }
+          .container .list .edit-area .form-g input[type="file"] + label {
+            display: inline-block;
+            padding: 8px 10px;
+            background-color: #c8c8c8;
+            border-radius: 2px;
+            color: #fff; }
+      .container .list .edit-area .btns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 24px; }
+        .container .list .edit-area .btns button {
+          width: 50%;
+          border: 0;
+          outline: 0;
+          font-size: 24px;
+          padding: 16px 0;
+          cursor: pointer; }
+          .container .list .edit-area .btns button i {
+            margin-right: 15px; }
+          .container .list .edit-area .btns button.n {
+            background-color: #fff;
+            color: #d0021b; }
+          .container .list .edit-area .btns button.y {
+            background-color: #4a90e2;
+            color: #fff; }
+  .container .checkbox-wrap {
+    display: block;
+    position: relative;
+    cursor: pointer; }
+    .container .checkbox-wrap input[type="checkbox"] {
+      position: absolute;
+      opacity: 0; }
+    .container .checkbox-wrap .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px;
+      background-color: #fff;
+      border-radius: 2px; }
+      .container .checkbox-wrap .checkmark::after {
+        content: '';
+        display: none;
+        position: absolute;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 5px;
+        left: 8px; }
+    .container .checkbox-wrap input[type="checkbox"]:checked ~ .checkmark {
+      background: #4a90e2; }
+    .container .checkbox-wrap input[type="checkbox"]:checked ~ .checkmark::after {
+      display: block; }
+  .container .message {
+    width: 620px;
+    margin: 10px auto;
+    padding-left: 35px;
+    font-size: 24px;
+    color: #c8c8c8; }

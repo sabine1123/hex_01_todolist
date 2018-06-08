@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo List</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css.css">
+<!-- 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+</head>
+<body>
+	<header>
+		<ul>
+			<li class="active">My Tasks</li>
+			<li>In Progress</li>
+			<li>Completed</li>
+		</ul>
+	</header>
+	<div class="container">
+		<div class="add">
+			<i class="fas fa-plus"></i> Add Task
+		</div>
+
+		<div class="list-wrap">
+
+			<div class="list">
+				<div class="header">
+					<div class="line">
+						<label class="checkbox-wrap">
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+						<div class="title">Type Something Here</div>
+						<div class="remark">
+							<i class="far fa-star"></i>
+							<!-- <i class="fas fa-star"></i> -->
+						</div>
+						<div class="edit">
+							<i class="fas fa-pencil-alt"></i>
+						</div>
+					</div>
+				</div> <!-- header -->
+<!-- 
+				<div class="icons">
+					<div class="icon date">
+						<i class="far fa-calendar-alt"></i>
+						<span id="date">2018/06/05</span>
+					</div>
+					<div class="icon file">
+						<i class="far fa-file"></i>
+					</div>
+					<div class="icon comment">
+						<i class="far fa-comment-dots"></i>
+					</div>
+				</div> -->
+
+				<div class="edit-area">
+					<div class="form-g">
+						<div class="title">
+							<i class="far fa-calendar-alt"></i><span>Deadline</span>		
+						</div>
+						<input type="text">
+					</div>
+					<div class="form-g">
+						<div class="title">
+							<i class="far fa-file"></i><span>File</span>		
+						</div>
+						<input type="file" name="file-btn">
+						<label for="file-btn">
+							<i class="fas fa-plus"></i>
+						</label>
+					</div>
+					<div class="form-g">
+						<div class="title">
+							<i class="far fa-comment-dots"></i><span>Comment</span>		
+						</div>
+						<textarea></textarea>
+					</div>
+					<div class="btns">
+						<button class="btn n">
+							<i class="fas fa-times"></i>Cancel
+						</button>
+						<button class="btn y">
+							<i class="fas fa-plus"></i>Add Task
+						</button>
+					</div>
+				</div><!-- edit-area -->
+
+			</div>  <!-- list -->
+
+			<div class="list">
+				<div class="header">
+					<div class="line">
+						<label class="checkbox-wrap">
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+						<div class="title">Type Something Here</div>
+						<div class="remark">
+							<i class="far fa-star"></i>
+							<!-- <i class="fas fa-star"></i> -->
+						</div>
+						<div class="edit">
+							<i class="fas fa-pencil-alt"></i>
+						</div>
+					</div>
+				</div> <!-- header -->
+
+				<div class="icons">
+					<div class="icon date">
+						<i class="far fa-calendar-alt"></i>
+						<span id="date">2018/06/05</span>
+					</div>
+					<div class="icon file">
+						<i class="far fa-file"></i>
+					</div>
+					<div class="icon comment">
+						<i class="far fa-comment-dots"></i>
+					</div>
+				</div>
+			</div>  <!-- list -->
+
+			<div class="list">
+				<div class="header">
+					<div class="line">
+						<label class="checkbox-wrap">
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+						<div class="title">Type Something Here</div>
+						<div class="remark">
+							<i class="far fa-star"></i>
+							<!-- <i class="fas fa-star"></i> -->
+						</div>
+						<div class="edit">
+							<i class="fas fa-pencil-alt"></i>
+						</div>
+					</div>
+				</div> <!-- header -->
+
+				<div class="icons">
+					<div class="icon date">
+						<i class="far fa-calendar-alt"></i>
+						<span id="date">2018/06/05</span>
+					</div>
+					<div class="icon file">
+						<i class="far fa-file"></i>
+					</div>
+					<div class="icon comment">
+						<i class="far fa-comment-dots"></i>
+					</div>
+				</div>
+			</div>  <!-- list -->
+
+			<div class="list">
+				<div class="header">
+					<div class="line">
+						<label class="checkbox-wrap">
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+						<div class="title">Type Something Here</div>
+						<div class="remark">
+							<i class="far fa-star"></i>
+							<!-- <i class="fas fa-star"></i> -->
+						</div>
+						<div class="edit">
+							<i class="fas fa-pencil-alt"></i>
+						</div>
+					</div>
+				</div> <!-- header -->
+
+				<div class="icons">
+					<div class="icon date">
+						<i class="far fa-calendar-alt"></i>
+						<span id="date">2018/06/05</span>
+					</div>
+					<div class="icon file">
+						<i class="far fa-file"></i>
+					</div>
+					<div class="icon comment">
+						<i class="far fa-comment-dots"></i>
+					</div>
+				</div>
+			</div>  <!-- list -->
+
+
+		</div>
+
+		<div class="message">4 tasks left</div>
+
+	</div>
+
+
+</body>
+</html>

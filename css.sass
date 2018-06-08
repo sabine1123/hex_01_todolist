@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+$container-w: 620px
+$font-l: 24px
+$font-m: 20px
+$blue: #4a90e2
+$gray: #c8c8c8
+
+ul
+	margin: 0
+	padding: 0
+	li
+		list-style: none
+
+body
+	background-color: #e1e1e1
+	font-family: 'Roboto', sans-serif	
+header
+	width: 100%
+	background-color: #4A90E2
+	ul
+		display: flex
+		justify-content: center
+		li
+
+			font-size: $font-l
+			color: #00408B
+			width: 220px
+			text-align: center
+			padding-top: 24px
+			padding-bottom: 24px 
+			position: relative
+			cursor: pointer
+			&.active
+				color: #fff
+				&::after
+					content: ''
+					width: 160px
+					height: 5px
+					background-color: #00408B
+					display: block
+					position: absolute
+					bottom: 0
+					left: 30px
+
+
+.container
+	width: $container-w
+	margin: 0 auto
+	.add
+		font-size: $font-l
+		color: $gray
+		background-color: #fff
+		border-radius: 5px
+		border: 2px solid $gray
+		padding: 18px 0 18px 32px 
+		margin-top: 24px
+	.list-wrap
+		padding-top: 16px
+	.list
+		background-color: #f2f2f2
+		margin-top: 8px
+		.header
+			border-radius: 5px
+			
+			padding: 24px 32px 0
+			.line
+				display: flex
+
+				.title
+					width: 436px
+					font-size: $font-l
+					margin: 0 0 15px 40px
+					// overflow: hidden
+					// white-space: nowrap
+					// text-overflow: ellipsis
+				.remark, .edit
+					font-size: $font-l
+					cursor: pointer
+				.edit
+					margin-left: 32px
+		.icons
+			display: flex
+			color: #757575
+			margin-left: 72px
+			padding-bottom: 15px
+			div
+				margin-right: 16px
+
+		.edit-area
+			border-top: 2px solid $gray
+			margin-top: 9px
+			margin-bottom: 16px
+			.form-g
+				padding-left: 72px
+				margin-top: 24px
+				.title
+					margin-bottom: 7px
+					span
+						font-size: $font-m
+						margin-left: 10px
+
+				textarea
+					width: 445px
+					height: 120px
+
+				input:first-of-type, textarea
+					margin-left: 23px
+
+				input, textarea
+					border: none
+					outline: none
+
+				input[type="text"]
+					width: 162px
+					height: 35px
+					padding-left: 10px
+
+				input[type="file"]
+					width: 0px
+					height: 0px
+					opacity: 0
+
+					+ label
+						display: inline-block
+						padding: 8px 10px
+						background-color: $gray
+						border-radius: 2px
+						color: #fff
+
+			.btns
+				display: flex
+				margin-top: 24px
+				button
+					width: 50%
+					border: 0
+					outline: 0
+					font-size: $font-l
+					padding: 16px 0
+					cursor: pointer
+					i 
+						margin-right: 15px
+
+					&.n
+						background-color: #fff
+						color: #d0021b
+					&.y
+						background-color: $blue
+						color: #fff
+
+	// ---checkbox
+	.checkbox-wrap
+		display: block
+		position: relative
+		cursor: pointer
+		input[type="checkbox"]
+			position: absolute
+			opacity: 0
+		.checkmark 
+		    position: absolute
+		    top: 0
+		    left: 0
+		    height: 24px
+		    width: 24px
+		    background-color: #fff	
+		    border-radius: 2px
+		    &::after
+		    	content: ''
+		    	display: none
+		    	position: absolute
+		    	width: 5px
+		    	height: 10px
+		    	border: solid white
+		    	border-width: 0 3px 3px 0
+		    	transform: rotate(45deg)
+		    	top: 5px
+		    	left: 8px
+
+		input[type="checkbox"]:checked ~ .checkmark
+			background: $blue
+		input[type="checkbox"]:checked ~ .checkmark::after
+			display: block;
+
+	.message
+		width: $container-w
+		margin: 10px auto
+		padding-left: 35px
+		font-size: $font-l
+		color: $gray
+
